@@ -1,3 +1,21 @@
-pipeline{
-    
-}
+pipeline
+	{
+	agent any
+		stages
+		{
+			stage("greet")
+			{
+				steps
+				{
+					echo "good morning"
+				}
+			}
+			stage ("care")
+			{
+				steps
+				{
+					echo "hello"
+				}
+			}		
+		}		   
+	}
